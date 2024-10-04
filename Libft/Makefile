@@ -1,0 +1,49 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
+#    Updated: 2024/10/04 15:48:11 by daafonso         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+SRC = ft_atoi.c \
+ft_isalnum.c \
+ft_isalpha.c \
+ft_isascii.c \
+ft_isdigit.c \
+ft_isprint.c \
+ft_memcmp.c \
+ft_memcpy.c \
+ft_memset.c \
+ft_strdup.c \
+ft_strlen.c \
+ft_strncmp.c \
+ft_strnstr.c
+
+OBJS		=		$(SRC:.c=.o)
+
+CC			= 		gcc
+RM			= 		rm -f
+CFLAGS		= 		-Wall -Wextra -Werror
+
+NAME		=		libft.a
+
+all:		$(NAME)
+
+$(NAME):	$(OBJS)
+			ar rcs $(NAME) $(OBJS)
+
+%.o: %.c
+			$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+			$(RM) $(OBJS)
+
+fclean:		clean
+			$(RM) $(NAME)
+
+re:			fclean all
