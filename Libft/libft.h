@@ -13,8 +13,10 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdlib.h>
-# include <unistd.h>
+# include <stdio.h> //printf() ATTENTION A SUPPRIMER AVANT DE RENDRE PROJET CAR PAS AUTORISE
+# include <stddef.h>//size_t
+# include <stdlib.h>//malloc(), free()
+# include <unistd.h>//write()
 
 int		ft_atoi(const char *str);
 int		ft_isalnum(int c);
