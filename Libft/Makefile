@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+         #
+#    By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
-#    Updated: 2024/10/04 15:48:11 by daafonso         ###   ########.fr        #
+#    Updated: 2024/10/06 22:22:58 by daniel149af      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,10 +17,12 @@ ft_isascii.c \
 ft_isdigit.c \
 ft_isprint.c \
 ft_memchr.c	\
+ft_memmove.c	\
 ft_memcmp.c \
 ft_memcpy.c \
 ft_memset.c \
 ft_strdup.c \
+ft_strlcpy.c \
 ft_strlen.c \
 ft_strncmp.c \
 ft_strnstr.c
