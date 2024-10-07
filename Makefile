@@ -6,11 +6,12 @@
 #    By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
-#    Updated: 2024/10/06 22:22:58 by daniel149af      ###   ########.fr        #
+#    Updated: 2024/10/07 15:38:32 by daniel149af      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRC = ft_atoi.c \
+ft_bzero \
 ft_isalnum.c \
 ft_isalpha.c \
 ft_isascii.c \
@@ -22,6 +23,7 @@ ft_memcmp.c \
 ft_memcpy.c \
 ft_memset.c \
 ft_strdup.c \
+ft_strlcat.c \
 ft_strlcpy.c \
 ft_strlen.c \
 ft_strncmp.c \
