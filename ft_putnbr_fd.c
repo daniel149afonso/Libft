@@ -1,33 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/07 16:16:56 by daniel149af       #+#    #+#             */
-/*   Updated: 2024/10/08 13:38:59 by daafonso         ###   ########.fr       */
+/*   Created: 2024/10/08 18:27:16 by daafonso          #+#    #+#             */
+/*   Updated: 2024/10/08 19:24:04 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	ft_putnbr_fd(int n, int fd)
 {
-	size_t	i;
-
-	i = 0;
-	while (s[i] && s[i] != c)
-		i++;
-	if (s[i] == '\0')
-		return (0);
-	return ((char *)&s[i]);
+	if (n == -2147483648)
+		ft_putstr_fd("-2147483648", fd);
+	else if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n = -n;
+		ft_putnbr_fd(n, fd);
+	}
+	else if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else
+	{
+		n += '0';
+		ft_putchar_fd(n, fd);
+	}
 }
 
 /*int	main(void)
 {
-	char	str[] = "Morty";
-	int	c = 't';
-	printf("%s", ft_strchr(str, c));
+	ft_putnbr_fd(-2147483648, 1);
 	return (0);
 }*/

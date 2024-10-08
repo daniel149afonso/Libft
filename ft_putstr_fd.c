@@ -1,33 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_pustr_fd.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/07 16:16:56 by daniel149af       #+#    #+#             */
-/*   Updated: 2024/10/08 13:38:59 by daafonso         ###   ########.fr       */
+/*   Created: 2024/10/08 16:53:17 by daafonso          #+#    #+#             */
+/*   Updated: 2024/10/08 17:25:25 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
 
 	i = 0;
-	while (s[i] && s[i] != c)
+	while (s[i])
 		i++;
-	if (s[i] == '\0')
-		return (0);
-	return ((char *)&s[i]);
+	write(fd, s, i);
 }
 
 /*int	main(void)
 {
-	char	str[] = "Morty";
-	int	c = 't';
-	printf("%s", ft_strchr(str, c));
+	ft_putstr_fd("Winterfel", 1);
 	return (0);
 }*/

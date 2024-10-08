@@ -1,33 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/07 16:16:56 by daniel149af       #+#    #+#             */
-/*   Updated: 2024/10/08 13:38:59 by daafonso         ###   ########.fr       */
+/*   Created: 2024/10/08 14:47:22 by daafonso          #+#    #+#             */
+/*   Updated: 2024/10/08 16:48:51 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	*ft_calloc(size_t count, size_t size)
 {
-	size_t	i;
+	void			*str;
+	unsigned char	*tmp;
+	size_t			i;
+	size_t			total_size;
 
+	total_size = size * count;
+	str = malloc(total_size);
+	if (str == NULL)
+		return (NULL);
+	tmp = (unsigned char *)str;
 	i = 0;
-	while (s[i] && s[i] != c)
+	while (i < total_size)
+	{
+		tmp[i] = 0;
 		i++;
-	if (s[i] == '\0')
-		return (0);
-	return ((char *)&s[i]);
+	}
+	return (str);
 }
 
 /*int	main(void)
 {
-	char	str[] = "Morty";
-	int	c = 't';
-	printf("%s", ft_strchr(str, c));
+	ft_calloc(10, 0);
 	return (0);
 }*/

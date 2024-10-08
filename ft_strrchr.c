@@ -1,33 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/07 16:16:56 by daniel149af       #+#    #+#             */
-/*   Updated: 2024/10/08 13:38:59 by daafonso         ###   ########.fr       */
+/*   Created: 2024/10/08 13:41:19 by daafonso          #+#    #+#             */
+/*   Updated: 2024/10/08 14:45:30 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
+	int	i;
 
 	i = 0;
-	while (s[i] && s[i] != c)
+	while (s[i])
 		i++;
-	if (s[i] == '\0')
-		return (0);
-	return ((char *)&s[i]);
+	while (i >= 0)
+	{
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
+		i--;
+	}
+	return (NULL);
 }
 
 /*int	main(void)
 {
-	char	str[] = "Morty";
-	int	c = 't';
-	printf("%s", ft_strchr(str, c));
+	char	str[] = "aryawwwbw";
+	int	c = 'w';
+	printf("%s", ft_strrchr(str, c));
 	return (0);
 }*/
