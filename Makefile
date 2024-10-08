@@ -6,7 +6,7 @@
 #    By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
-#    Updated: 2024/10/07 15:40:58 by daniel149af      ###   ########.fr        #
+#    Updated: 2024/10/07 16:15:05 by daniel149af      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,9 @@ ft_strlcat.c \
 ft_strlcpy.c \
 ft_strlen.c \
 ft_strncmp.c \
-ft_strnstr.c
+ft_strnstr.c \
+ft_tolower.c \
+ft_toupper.c
 
 OBJS		=		$(SRC:.c=.o)
 
