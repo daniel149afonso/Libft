@@ -1,42 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 15:19:33 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/11 16:50:35 by daafonso         ###   ########.fr       */
+/*   Created: 2024/10/11 15:37:06 by daafonso          #+#    #+#             */
+/*   Updated: 2024/10/11 16:51:25 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*s2;
 	size_t	i;
+	size_t	len;
+	char	*str;
 
 	i = 0;
-	while (s1[i])
-		i++;
-	s2 = malloc((i + 1) * sizeof(char));
-	if (!s2)
-		return (0);
-	i = 0;
-	while (s1[i])
+	len = ft_strlen(s);
+	str = malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
+	while (s[i])
 	{
-		s2[i] = s1[i];
+		str[i] = (*f)(i, s[i]);
 		i++;
 	}
-	s2[i] = '\0';
-	return (s2);
+	str[i] = '\0';
+	return (str);
 }
 
-/*int	main(void)
+/*char	ft_toupper_v2(unsigned int i, char c)
 {
-	char	str[] = "Hello";
-	char	*result = ft_strdup((const char *)str);
+	// On ignore l'indice
+	(void)i;
+	// Conversion en majuscule
+	return ((char)ft_toupper(c));
+}
+
+int	main(void)
+{
+	const char	str[] = "John Snow";
+	char	*result = ft_strmapi(str, ft_toupper_v2);
 	printf("%s\n", result);
 	free(result);
 	return (0);

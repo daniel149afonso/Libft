@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
+/*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 19:27:09 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/10 14:15:26 by daniel149af      ###   ########.fr       */
+/*   Updated: 2024/10/11 18:01:20 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 /*int	main(void)
 {
-	printf("%s\n", ft_substr("", 6, 29));
+	char	*result = ft_substr("", 6, 29);
+	printf("%s\n", result);
+	free(result);
 	return (0);
 }*/

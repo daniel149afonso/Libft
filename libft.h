@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:29:44 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/08 19:44:15 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/11 18:00:34 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <stdio.h> //printf() ATTENTION A SUPPRIMER CAR PAS AUTORISE
-# include <stddef.h>//size_t
 # include <stdlib.h>//malloc(), free()
 # include <unistd.h>//write()
 
@@ -44,8 +43,12 @@ int		ft_toupper(int c);
 
 //additionals functions
 void	ft_putchar_fd(char c, int fd);
+void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

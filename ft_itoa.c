@@ -1,43 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/04 15:19:33 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/11 16:50:35 by daafonso         ###   ########.fr       */
+/*   Created: 2024/10/11 16:05:39 by daafonso          #+#    #+#             */
+/*   Updated: 2024/10/11 17:45:56 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
-{
-	char	*s2;
-	size_t	i;
+static int	int_length(int nbr);
 
-	i = 0;
-	while (s1[i])
-		i++;
-	s2 = malloc((i + 1) * sizeof(char));
-	if (!s2)
-		return (0);
-	i = 0;
-	while (s1[i])
-	{
-		s2[i] = s1[i];
-		i++;
-	}
-	s2[i] = '\0';
-	return (s2);
+char	*ft_itoa(int n)
+{
+	size_t	len;
+	long	nbr;
+	char	*str;
+
+	str = malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
+
+
 }
 
-/*int	main(void)
+int	int_length(int nbr)
 {
-	char	str[] = "Hello";
-	char	*result = ft_strdup((const char *)str);
-	printf("%s\n", result);
-	free(result);
-	return (0);
-}*/
+	int	count;
+
+	count = 0;
+
+	if (nbr < 0)
+	{
+		nbr = -nbr;
+		count++;
+	}
+
+	while (nbr > 9)
+	{
+		nbr /= 10;
+		count++;
+	}
+}

@@ -6,7 +6,7 @@
 #    By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
-#    Updated: 2024/10/08 19:45:19 by daafonso         ###   ########.fr        #
+#    Updated: 2024/10/11 17:06:59 by daafonso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,9 +24,13 @@ ft_memcmp.c \
 ft_memcpy.c \
 ft_memset.c \
 ft_putchar_fd.c \
+ft_putendl_fd.c \
 ft_putnbr_fd.c \
 ft_putstr_fd.c \
 ft_strdup.c \
+ft_striteri.c \
+ft_strmapi.c \
+ft_strjoin.c \
 ft_strlcat.c \
 ft_strlcpy.c \
 ft_strlen.c \
