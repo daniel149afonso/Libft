@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:29:44 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/11 18:00:34 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/12 17:11:16 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 
 //additionals functions
+char	*ft_itoa(int n);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);

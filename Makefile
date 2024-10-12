@@ -6,7 +6,7 @@
 #    By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
-#    Updated: 2024/10/11 17:06:59 by daafonso         ###   ########.fr        #
+#    Updated: 2024/10/12 17:11:41 by daafonso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,7 @@ ft_isalpha.c \
 ft_isascii.c \
 ft_isdigit.c \
 ft_isprint.c \
+ft_itoa.c \
 ft_memchr.c	\
 ft_memmove.c \
 ft_memcmp.c \
