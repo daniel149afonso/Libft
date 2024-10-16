@@ -6,7 +6,7 @@
 #    By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
-#    Updated: 2024/10/12 17:11:41 by daafonso         ###   ########.fr        #
+#    Updated: 2024/10/15 20:19:18 by daafonso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ ft_putchar_fd.c \
 ft_putendl_fd.c \
 ft_putnbr_fd.c \
 ft_putstr_fd.c \
+ft_strchr.c \
 ft_strdup.c \
 ft_striteri.c \
 ft_strmapi.c \
@@ -39,6 +40,7 @@ ft_strncmp.c \
 ft_strnstr.c \
 ft_strrchr.c \
 ft_substr.c \
+ft_strtrim.c \
 ft_tolower.c \
 ft_toupper.c
 

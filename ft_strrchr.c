@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 13:41:19 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/08 14:45:30 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/16 17:23:20 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,6 @@ char	*ft_strrchr(const char *s, int c)
 	printf("%s", ft_strrchr(str, c));
 	return (0);
 }*/
+//Trouve le dernier caractere d'une string
+//Parcourir a l'envers
+//int i car i = -1 a la fin de la boucle

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
+/*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 11:37:43 by daniel149af       #+#    #+#             */
-/*   Updated: 2024/10/07 14:45:21 by daniel149af      ###   ########.fr       */
+/*   Updated: 2024/10/16 16:22:14 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	printf("Destination: %s\n", dest);
 	return (0);
 }*/
+//Concatene une string dans une autre + '\0'
+// size = strin + '\0' evite les erreurs de depassement

@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 14:03:40 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/11 16:48:48 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/16 16:19:28 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,4 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	free(result);
 	return (0);
 }*/
+// Concatene deux string dans une nouvelle string

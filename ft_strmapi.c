@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:37:06 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/11 16:51:25 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/15 20:10:12 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,3 +48,6 @@ int	main(void)
 	free(result);
 	return (0);
 }*/
+//Applique une fonction à chaque caractère
+//d'une chaîne et renvoie une nouvelle chaîne.
+//toupper est modifie pour ignorer i

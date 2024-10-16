@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 19:27:09 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/11 18:01:20 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/15 20:08:36 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,3 +46,4 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	free(result);
 	return (0);
 }*/
+//Renvoie une sous-chaîne d'une chaîne
