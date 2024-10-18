@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/11 15:12:59 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/11 16:55:18 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/18 19:20:09 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,4 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+//BUT: permet d'appliquer une fonction donnée à chaque caractère de la chaîne

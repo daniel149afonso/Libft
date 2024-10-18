@@ -39,3 +39,4 @@ void	*ft_memset(void *s, int c, size_t n)
 	printf("\n");
 	return (0);
 }*/
+//BUT: remplir une zone mémoire avec une valeur spécifique

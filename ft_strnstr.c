@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 17:13:32 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/04 16:13:50 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/18 19:22:39 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,5 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		printf("%s\n", ft_strnstr(argv[1], argv[2], 1));
 	return (0);
 }*/
+//BUT: recherche une sous-chaîne dans une chaîne principale,
+//en limitant le nombre de caractères à inspecter

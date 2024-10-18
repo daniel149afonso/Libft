@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 15:19:33 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/11 16:50:35 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/18 19:35:25 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,3 +41,6 @@ char	*ft_strdup(const char *s1)
 	free(result);
 	return (0);
 }*/
+//BUT: créer une copie d'une chaîne de caractères.
+//Elle alloue dynamiquement la mémoire nécessaire
+//pour contenir la chaîne d'origine

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+         #
+#    By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
-#    Updated: 2024/10/17 22:46:30 by daniel149af      ###   ########.fr        #
+#    Updated: 2024/10/18 19:42:51 by daafonso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

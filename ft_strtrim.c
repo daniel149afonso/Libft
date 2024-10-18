@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 14:27:19 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/16 17:41:03 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/18 19:22:57 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	free(result);
 	return (0);
 }*/
-// Ft_strtrim supprime les caracteres avant du debut et de la fin de s1
+// BUT: Ft_strtrim supprime les caracteres avant du debut et de la fin de s1
 // qui sont present dans set.
 // Cas particulier: start > end
 // donc tous les caracteres de s1 sont presents dans set

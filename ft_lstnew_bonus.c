@@ -1,43 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 13:41:19 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/18 19:22:47 by daafonso         ###   ########.fr       */
+/*   Created: 2024/10/18 19:58:16 by daafonso          #+#    #+#             */
+/*   Updated: 2024/10/18 21:01:12 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+t_list	*ft_lstnew(void *content)
 {
-	int		i;
-	char	cc;
+	t_list	*list;
 
-	i = 0;
-	cc = (char)c;
-	while (s[i])
-		i++;
-	while (i >= 0)
-	{
-		if (s[i] == cc)
-			return ((char *)&s[i]);
-		i--;
-	}
-	return (NULL);
+	list = malloc(sizeof(t_list));
+	if (!list)
+		return (NULL);
+	list->content = content;
+	list->next = NULL;
+	return (list);
 }
 
 /*int	main(void)
 {
-	char	str[] = "aryawwwbw";
-	int	c = 'w';
-	printf("%s", ft_strrchr(str, c));
+	t_list	*list = ft_lstnew(ft_strdup("Hello"));
+	printf("%s\n", (char *)list->content);
+	free(list->content);
+	free(list);
 	return (0);
 }*/
-//BUT: Trouve le dernier caractere d'une string
-//Parcourir a l'envers
-//int i car i = -1 a la fin de la boucle
-//Conversion int -> char pour check -128 et 127

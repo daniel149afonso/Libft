@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
+/*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/06 21:07:36 by daniel149af       #+#    #+#             */
-/*   Updated: 2024/10/06 22:21:51 by daniel149af      ###   ########.fr       */
+/*   Updated: 2024/10/18 19:27:38 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,3 +42,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	printf("Length of src: %zu\n", n);
 	return (0);
 }*/
+//BUT: copie une chaîne de caractères dans une autre
+//avec un espace pour '\0'
+//permet deviter les depassement de memoire

@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 13:02:32 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/04 13:36:10 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/18 19:00:53 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*str;
 	const unsigned char	*str1;
 
+	if (!dest && !src)
+		return (NULL);
 	i = 0;
 	str = (unsigned char *)dest;
 	str1 = (const unsigned char *)src;
@@ -42,3 +44,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	printf("\n");
 	return (0);
 }*/
+//BUT: copie un bloc de mémoire d'une source vers une destination
+//dest: Un pointeur vers la zone de mémoire où les données doivent être copiées
+//src: Un pointeur vers la zone de mémoire d'où les données doivent être copiées
+//n : Le nombre d'octets à copier.

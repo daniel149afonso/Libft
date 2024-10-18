@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 15:37:28 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/04 14:49:46 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/18 19:29:14 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,9 @@ int	ft_atoi(const char *str)
 		printf("%d\n", ft_atoi(argv[1]));
 	return (0);
 }*/
+/*
+BUT: Convertit une chaîne de caractères en un entier.
+Elle ignore les espaces blancs au début de la chaîne,
+ traite les signes (positif ou négatif),
+  et convertit la séquence numérique en entier
+*/
