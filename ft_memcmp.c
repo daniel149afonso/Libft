@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 13:05:01 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/04 14:28:54 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/17 23:03:31 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	printf("%d\n", ft_memcmp("ac", "ab", 2));
 	return (0);
 }*/
+//compare deux zones de mémoire
+//octet par octet sur une longueur donnée.

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 16:11:46 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/04 16:28:09 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/17 22:59:09 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	printf("%s\n", (unsigned char *)ft_memchr(str, 'e', 5));
 	return (0);
 }*/
+//Elle permet de rechercher la première occurrence
+//d'un caractère spécifique dans une zone de mémoire.
