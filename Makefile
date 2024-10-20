@@ -6,7 +6,7 @@
 #    By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
-#    Updated: 2024/10/18 19:42:51 by daafonso         ###   ########.fr        #
+#    Updated: 2024/10/20 20:33:18 by daafonso         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,15 @@ ft_strtrim.c \
 ft_tolower.c \
 ft_toupper.c
 
+BONUS 		= ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c ft_lstclear_bonus.c \
+			ft_lstdelone_bonus.c ft_lstiter_bonus.c ft_lstlast_bonus.c \
+			ft_lstmap_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c
+
+SRCSALL 	= 		${SRC} ${BONUS}
+
 OBJS		=		$(SRC:.c=.o)
+
+OBJSALL		=		${SRCSALL:.c=.o}
 
 CC			= 		gcc
 RM			= 		rm -f
@@ -53,11 +61,15 @@ CFLAGS		= 		-Wall -Wextra -Werror
 
 NAME		=		libft.a
 
+
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
 			ar rcs $(NAME) $(OBJS)
 
+bonus:		${OBJSALL}
+			ar -rsc $(NAME) $(OBJSALL)
+			
 %.o: %.c
 			$(CC) $(CFLAGS) -c $< -o $@
 
