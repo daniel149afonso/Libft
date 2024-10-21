@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:29:44 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/20 19:27:41 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/21 13:21:06 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h> //A SUPPRIMER AVANT DE FINIR LE PROJET INTERDIT!!!!!!!
 # include <stdlib.h>//malloc(), free()
 # include <unistd.h>//write()
 

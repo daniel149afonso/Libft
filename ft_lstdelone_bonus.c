@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone_bonus.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
+/*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/20 17:34:07 by daafonso          #+#    #+#             */
-/*   Updated: 2024/10/20 17:54:21 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/21 12:49:21 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
+	if (!lst || !del)
+		return ;
 	del(lst->content);
 	free(lst);
 }
@@ -32,7 +34,7 @@ int	main(void)
 	lst->next = NULL;
 
 	ft_lstdelone(lst, del_content);
-	printf("%s\n", (char *)lst->content); //Ne check pas is l'element empty Warning
+	printf("%s\n", (char *)lst->content);//Ne check pas is element empty Warning
 	return (0);
 }*/
 //BUT: Supprimme l'element et son contenu en liberant la memoire alloue
