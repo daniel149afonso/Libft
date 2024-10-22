@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+         #
+#    By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
-#    Updated: 2024/10/20 20:33:18 by daafonso         ###   ########.fr        #
+#    Updated: 2024/10/22 12:54:55 by daniel149af      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -68,15 +68,17 @@ $(NAME):	$(OBJS)
 			ar rcs $(NAME) $(OBJS)
 
 bonus:		${OBJSALL}
-			ar -rsc $(NAME) $(OBJSALL)
-			
+			ar rcs $(NAME) $(OBJSALL)
+
 %.o: %.c
 			$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-			$(RM) $(OBJS)
+			$(RM) $(OBJS) $(OBJSALL)
 
 fclean:		clean
 			$(RM) $(NAME)
 
 re:			fclean all
+
+.PHONY:		all clean fclean re bonus
