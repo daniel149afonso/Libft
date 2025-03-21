@@ -24,22 +24,26 @@ Il consiste à recréer une partie des fonctions de la librairie standard du lan
 Compiler la bibliothèque :
 
 ```bash
-make ```
+make
+```
 
 Utiliser libft.a dans un projet :
 
 ```bash
 gcc main.c libft.a
+```
 
 Nettoyer les fichiers objets :
 
 ```bash
 make clean
+```
 
 Nettoyer les fichiers objets et l'exécutable :
 
 ```bash
 make fclean
+```
 
 Recompiler depuis zéro :
 
