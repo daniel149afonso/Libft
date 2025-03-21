@@ -6,7 +6,7 @@
 /*   By: daafonso <daafonso@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 21:01:33 by daniel149af       #+#    #+#             */
-/*   Updated: 2024/10/18 19:10:41 by daafonso         ###   ########.fr       */
+/*   Updated: 2024/10/22 14:10:25 by daafonso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	const char	*src = "Hello";
 	return (0);
 }*/
-//But: copie une certaine quantité de données
+//But: copie un bloc de memoire d'une
 //source vers une zone de mémoire destination
 //En traitant les cas de chevauchement contrairement a memcpy
 //Cas 1 chevauchement:
-//Copie en partant 
+//Copie en partant
