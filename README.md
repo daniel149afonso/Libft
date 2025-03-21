@@ -1,30 +1,27 @@
-Libft
-Libft est le tout premier projet de l'école 42.
-Il a pour objectif de recréer une partie de la bibliothèque standard du langage C, ainsi que d’implémenter des fonctions utilitaires utiles pour les projets à venir.
+# Libft
 
-🧠 Objectifs
-Apprendre la gestion de la mémoire et la manipulation des pointeurs en C
-Reproduire des fonctions de la librairie standard (strlen, strdup, memcpy, etc.)
-Comprendre la création d’une bibliothèque statique (.a) avec ar et Makefile
-Poser des bases solides pour les projets futurs à 42
-🛠️ Contenu
-Re-implémentation de fonctions libc (ex: ft_strlen, ft_memset, ft_strlcpy, etc.)
-Fonctions supplémentaires utiles (ft_split, ft_itoa, etc.)
-Toutes les fonctions sont codées en C selon les normes de style de l'école 42
-🧪 Utilisation
+Libft est le tout premier projet de l'école 42.  
+Il consiste à recréer une partie des fonctions de la librairie standard du langage C, ainsi que d’implémenter des fonctions utilitaires pour les projets futurs.
+
+## Objectifs 🎯
+
+- Reproduire les fonctions standards en C (`strlen`, `memset`, etc.)
+- Comprendre la gestion de la mémoire et des pointeurs
+- Créer une bibliothèque statique (`libft.a`)
+- Acquérir de bonnes bases pour les prochains projets
+
+## Contenu 🧩
+
+- Fonctions de la libc (`ft_strlen`, `ft_memcpy`, `ft_strchr`, etc.)
+- Fonctions supplémentaires (`ft_split`, `ft_itoa`, etc.)
+- Fichiers :
+  - `libft.h` : en-tête
+  - `*.c` : fichiers source
+  - `Makefile`
+
+## Utilisation 🛠️
+
 Compiler la bibliothèque :
 
-bash
-Copier
+```bash
 make
-L’utiliser dans un programme :
-
-bash
-Copier
-gcc votre_programme.c libft.a
-📁 Fichiers
-libft.h – Fichier d’en-tête contenant tous les prototypes
-*.c – Fichiers source des fonctions
-Makefile – Compilation, nettoyage, etc.
-✅ Statut
-✅ Projet terminé, validé avec succès (tests libft-unit-test, war-machine, etc.)
