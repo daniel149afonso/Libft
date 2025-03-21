@@ -24,7 +24,7 @@ Il consiste à recréer une partie des fonctions de la librairie standard du lan
 Compiler la bibliothèque :
 
 ```bash
-make
+make ```
 
 Utiliser libft.a dans un projet :
 
