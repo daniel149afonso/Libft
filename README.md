@@ -18,7 +18,7 @@ The goal is to recreate a portion of the C standard library functions, as well a
   - `libft.h` : header file
   - `*.c` : source files
   - `Makefile`
-## Utilisation 🛠️
+## Usage 🛠️
 
 Compile the library :
 
