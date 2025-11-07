@@ -6,48 +6,49 @@
 #    By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/04 13:14:47 by daafonso          #+#    #+#              #
-#    Updated: 2025/03/21 18:38:16 by daniel149af      ###   ########.fr        #
+#    Updated: 2025/11/07 23:04:57 by daniel149af      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC = ft_atoi.c \
-ft_bzero.c \
-ft_calloc.c \
-ft_isalnum.c \
-ft_isalpha.c \
-ft_isascii.c \
-ft_isdigit.c \
-ft_isprint.c \
-ft_itoa.c \
-ft_memchr.c	\
-ft_memmove.c \
-ft_memcmp.c \
-ft_memcpy.c \
-ft_memset.c \
-ft_putchar_fd.c \
-ft_putendl_fd.c \
-ft_putnbr_fd.c \
-ft_putstr_fd.c \
-ft_split.c \
-ft_strchr.c \
-ft_strdup.c \
-ft_striteri.c \
-ft_strmapi.c \
-ft_strjoin.c \
-ft_strlcat.c \
-ft_strlcpy.c \
-ft_strlen.c \
-ft_strncmp.c \
-ft_strnstr.c \
-ft_strrchr.c \
-ft_substr.c \
-ft_strtrim.c \
-ft_tolower.c \
-ft_toupper.c
+DIR = src
+SRC = $(DIR)/ft_atoi.c \
+$(DIR)/ft_bzero.c \
+$(DIR)/ft_calloc.c \
+$(DIR)/ft_isalnum.c \
+$(DIR)/ft_isalpha.c \
+$(DIR)/ft_isascii.c \
+$(DIR)/ft_isdigit.c \
+$(DIR)/ft_isprint.c \
+$(DIR)/ft_itoa.c \
+$(DIR)/ft_memchr.c	\
+$(DIR)/ft_memmove.c \
+$(DIR)/ft_memcmp.c \
+$(DIR)/ft_memcpy.c \
+$(DIR)/ft_memset.c \
+$(DIR)/ft_putchar_fd.c \
+$(DIR)/ft_putendl_fd.c \
+$(DIR)/ft_putnbr_fd.c \
+$(DIR)/ft_putstr_fd.c \
+$(DIR)/ft_split.c \
+$(DIR)/ft_strchr.c \
+$(DIR)/ft_strdup.c \
+$(DIR)/ft_striteri.c \
+$(DIR)/ft_strmapi.c \
+$(DIR)/ft_strjoin.c \
+$(DIR)/ft_strlcat.c \
+$(DIR)/ft_strlcpy.c \
+$(DIR)/ft_strlen.c \
+$(DIR)/ft_strncmp.c \
+$(DIR)/ft_strnstr.c \
+$(DIR)/ft_strrchr.c \
+$(DIR)/ft_substr.c \
+$(DIR)/ft_strtrim.c \
+$(DIR)/ft_tolower.c \
+$(DIR)/ft_toupper.c
 
-BONUS 		= ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c ft_lstclear_bonus.c \
-			ft_lstdelone_bonus.c ft_lstiter_bonus.c ft_lstlast_bonus.c \
-			ft_lstmap_bonus.c ft_lstnew_bonus.c ft_lstsize_bonus.c
+BONUS 		= $(DIR)/ft_lstadd_back_bonus.c $(DIR)/ft_lstadd_front_bonus.c $(DIR)/ft_lstclear_bonus.c \
+			$(DIR)/ft_lstdelone_bonus.c $(DIR)/ft_lstiter_bonus.c $(DIR)/ft_lstlast_bonus.c \
+			$(DIR)/ft_lstmap_bonus.c $(DIR)/ft_lstnew_bonus.c $(DIR)/ft_lstsize_bonus.c
 
 SRCSALL 	= 		${SRC} ${BONUS}
 
