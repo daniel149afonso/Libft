@@ -1,4 +1,3 @@
-# Libft
 
 Libft is the very first project at 42 School.  
 The goal is to recreate a portion of the C standard library functions, as well as implement utility functions for use in future projects.
